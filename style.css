@@ -1,0 +1,208 @@
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css?family=Special+Elite');
+
+* {
+    font-family: Arial;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #fafbfc;
+}
+
+#main {
+    max-width: 100%;
+    background: #fff;
+    box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.1);
+    margin: 100px auto;
+}
+
+/* NAVIGATION */
+
+.nav {
+    background: #4d4c4c;
+    padding: 5px;
+    z-index: 99;
+}
+
+.nav>ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav>ul>li {
+    font-size: .9em;
+    margin-right: 10px;
+}
+
+.nav>ul>li>a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    transition: 500ms;
+}
+
+.c-title {
+    text-align: center;
+}
+
+#title {
+    font-size: 2.3em;
+}
+
+#img-div {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+#image {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+#img-caption {
+    background: #4d4c4c;
+    color: #fff;
+    width: 100%;
+    text-align: center:
+}
+
+#img-caption>figure {
+    font-size: .8rem;
+}
+
+figure {
+    text-align: center;
+    padding: 8px;
+}
+
+.image-fact {
+    max-width: 40%;
+    min-height: 800px;
+    overflow: hidden;
+
+}
+
+.image-fact>img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover
+}
+
+.info-fact {
+    width: 60%;
+    background: #eee;
+    margin-left: 10px;
+    padding: 15px;
+}
+
+#article2 {
+    display: flex;
+}
+
+/* CONTENT */
+
+#tribute-info {
+    padding: 20px 30px;
+}
+
+article {
+    padding: 10px;
+}
+
+article>h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 10%, rgba(238, 238, 238, 1) 50%, rgba(238, 238, 238, 1) 50%, rgba(255, 255, 255, 1) 90%);
+    padding: 15px;
+}
+
+.quotes {
+    display: flex;
+    justify-content: center;
+}
+
+blockquote {
+    font-family: 'Special Elite', cursive;
+    font-weight: 100;
+    font-size: 1.3rem;
+    max-width: 600px;
+    line-height: 1.4;
+    position: relative;
+    padding: .5rem;
+    text-align: center;
+    color: #3f3f5a;
+
+}
+
+blockquote::before,
+blockquote::after {
+    font-family: 'Special Elite', cursive;
+    position: absolute;
+    color: #f1efe6;
+    font-size: 6rem;
+    width: 4rem;
+    height: 4rem;
+}
+
+blockquote::before {
+    content: '“';
+    left: -3rem;
+    top: -3rem;
+}
+
+blockquote::after {
+    content: '”';
+    right: -3rem;
+    bottom: 4rem;
+}
+
+cite {
+    line-height: 3;
+    text-align: left;
+}
+
+/* FOOTER */
+
+.source {
+    background: #4d4c4c;
+    padding: 10px 10px;
+    color: #fff;
+    text-align: center;
+}
+
+#tribute-link {
+    color: #fff;
+    font-weight: bold;
+}
+
+/* RESPONSIVE */
+
+@media (min-width: 800px) {
+    #main {
+        max-width: 70%;
+    }
+
+    .nav>ul>li {
+        font-size: 1.1em;
+    }
+
+    .nav {
+   	 	padding: 15px;
+	}
+
+}
